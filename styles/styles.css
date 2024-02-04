@@ -1,0 +1,339 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+       
+/*+++++ Start CSS Reset +++++*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*+++++ End CSS Reset +++++*/
+
+
+body{
+    background-color: #ef5a5a;
+}
+
+article{
+    background-color: #ffa952;
+	border-radius: 25px;
+    margin-bottom: 3%;
+}
+
+.normal>p{
+    line-height: 140%;
+    font-family: 'Lora', serif;
+    letter-spacing: 0.05em;
+    padding: 5%;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.normal>blockquote{
+    line-height: 120%;
+    font-family: 'Lora', serif;
+    font-size: 1.25em;
+    font-weight: 800;
+    padding: 5% 4.5% 0 4.5%;
+}
+
+h2, h3, h4, h5, h6{
+    font-family: 'Playfair Display', serif;
+    color: #505257;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.75em;
+    padding: 5%;
+}
+
+h3{
+    font-size: 1.25em;
+    padding: 3.5%;
+    font-weight: 900;
+}
+
+ul{
+    text-align: center;
+    background-color: #ffa952;
+    color: #ef5a5a;
+    font-size: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+a:link{
+    color:  #118a7e;
+}
+
+a:visited{
+    color:  #118a7e;
+}
+
+/*Begin wrapper*/
+#wrapper{
+    width: 80.56640625%;
+    margin:0 auto;
+}
+/*End wrapper*/
+
+/*Begin header*/
+.header{
+        padding-top: 0.1%;
+        padding-bottom: 0.1%;
+        margin: auto;
+        margin-bottom: 1%;
+        width: 65%;
+    } 
+
+.header h1{
+    text-align:center; 
+    padding-top: 4px;
+    font-size:60px; 
+    font-family: 'Playfair Display SC', serif;
+    color: #1f6f78;
+    background-color: #3baea0;
+    text-align: center;
+    border-radius: 25px;
+}
+/*End header*/
+
+/*Begin nav*/
+.navbar{
+    overflow: hidden;
+    background-color: #5C5470;
+    border-radius: 25px;
+}
+
+.navbar a{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+/*End nav*/
+
+/*Begin sticker*/
+div#sticker{
+    width: 89.583333333%;
+}
+
+.stick{
+    position:fixed;
+    top:0px;
+    width: 89.583333333%;
+}
+/*End sticker*/
+
+/*Begin feature*/
+#feature{
+    width: 81.3257575758%; /* 706 / 825 */
+    margin: 3% auto 4%;
+    background-color: #ffe79a;
+    overflow: hidden;
+    padding: 1.5% 2.25% 3.5% 2.25%;
+}
+
+.song-feature {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 90px;
+    margin-right:90px;
+    padding-top: 7px;
+    padding-bottom: 1px;
+    background-color: #118a7e;
+    border-radius: 25px; 
+}
+.feature-img {
+    border-radius: 5%;
+    width: 30%;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+}
+
+.feature-text{
+    float: left;
+    width: 58%;
+    margin-left: 2%;
+    font-family: 'Lora', serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 0.05em;
+    padding-top: 3%;
+}
+
+#feature h2{
+    margin-bottom: 2%;
+    color: #5C5470;
+}
+
+#feature h3{
+    color: #5C5470;
+}
+/*End feature*/
+
+/*Begin main*/
+#main-content{
+    width: 51.393939393%; /* 523 / 825 */
+    float: left;
+    margin: 2%;
+    padding: 0 0 0 2%;
+}
+
+.main-figure{
+    width: 32.504780114%; /* 170 / 523 */
+    margin-right: 9.560229445%; /* 50 / 523 */
+    float: right;
+}
+#warped-playlist {
+    text-align: center;
+    margin: auto;
+}
+
+.warped-playlist {
+    display: inline-block;
+}
+/*End main*/
+
+/*Begin sidebar*/
+#sidebar{
+    width: 30.606060606%; /* 302 / 825 */
+    float: left;
+    margin: 2%;
+    padding: 4%;
+}
+
+.side-figure{
+    width: 88.079470198%; /* 266 /302 */
+    margin: 0 auto;
+    padding-bottom: 2%;
+}
+
+#sidebar figcaption{
+    margin-bottom: 2%;
+    letter-spacing: 0.1em;
+}
+/*End sidebar*/
+
+/* begin table*/
+table{
+    background-color: #ffe79a;
+}
+
+thead{
+    background-color: #118a7e;
+}
+
+td, th {
+    border: 1px solid;
+}
+
+tr:nth-child(even){
+    background-color: #118a7e;
+}
+
+/*end table*/
+
+/*Begin figure*/
+figure{
+    background-color: #118a7e;
+}
+
+figure img{
+    max-width: 100%;
+}
+figcaption{
+    font-family: 'Lora', serif;
+    color: #ffe79a;
+    margin: 3%;
+    letter-spacing: 0.05em;
+    line-height: 1.25em;
+    font-size: 1.005em;
+}
+/*End figure*/
+
+/*Begin footer*/
+footer{
+    clear: left;
+    padding: 2%;
+    text-align: center;
+    color: #1f6f78;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    background-color: #3baea0;
+    text-align: center;
+    border-radius: 25px;
+}
+
+footer>p{
+    margin: 0;
+}
+/*End footer*/
+
+/* type styles */
+
+p{
+    margin: 2.5% 0;
+}

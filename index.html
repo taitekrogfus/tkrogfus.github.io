@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taite's Music Page</title>
+
+	<link rel="stylesheet" href="./styles/styles.css">
+    <style type="text/css">
+		 header{
+            padding-top: 0.1%;
+            padding-bottom: 0.1%;
+            margin: auto;
+            margin-bottom: 1%;
+            width: 65%;
+        } 
+    
+        header,footer{
+            color: #1f6f78;
+            font-family: Georgia, Times, "Times New Roman", serif;
+            background-color: #3baea0;
+            text-align: center;
+            border-radius: 25px;
+        }
+		*{
+			box-sizing: border-box;
+		}
+
+		.column{
+			float: left;
+			width: 25%;
+			padding: 5px;
+		}
+
+		/* Clearfix (clear floats) */
+		.row::after{
+			content: "";
+			clear: both;
+			display: table;
+		}
+		img{
+			border-radius: 2%;
+		}
+		#warped-playlist{
+			text-align: center;
+			margin: auto;
+		}
+		.figure{
+			text-align: center;
+			margin: auto;	
+		}
+	</style>
+</head>
+<body>
+    <!--Begin Wrapper-->
+	<div id="wrapper">
+		<header>
+			<h1>Taite's Music Page</h1>
+		</header>
+		
+		<div id="sticker" class="navbar">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./pages/page_1.html">EDM</a></li>
+                <li><a href="./pages/page_2.html">Indie</a></li>
+                <li><a href="./pages/page_3.html">R&B</a></li>
+                <li><a href="./pages/page_4.html">Hip Hop</a></li>
+            </ul>
+        </div>
+
+        <div id="feature">
+            <h2>A Look Into My Spotify!</h2>
+            <article>
+				<h3>My Favorite Songs At the Moment.</h3>
+					<div class="row">
+						<div class="column">
+							<img src="./images/overpowering_benet.jpeg" alt="Overpowering by Benet" style="width:100%">
+						</div>
+						
+						<div class="column">
+							<img src="./images/love_international_khruangbin.jpeg" alt="Love International by Khruangbin" style="width:100%">
+						</div>
+						
+						<div class="column">
+							<img src="./images/language_brent_faiyaz.jpeg" alt="Language by Brent Faiyaz" style="width:100%">
+						</div>
+						
+						<div class="column">
+							<img src="./images/little_bit_lykke_li.jpeg" alt="Little Bit by(Autoerotique Remix)" style="width:94%">
+						</div>
+						
+					</div>
+			</article> 
+
+        <div id="main-content">
+            <article class="normal">
+                <h2>My 2023 Spotify Warped Playlist</h2>
+                <figure class="warped-playlist" style="text-align:center;">
+					<a href="https://open.spotify.com/playlist/37i9dQZF1Fa86H8Kvb4MFR?si=Fx58eHJITJKFpX-jHqZStQ&pi=u-tC5bb2trQSqY&nd=1&dlsi=79e667600c554469">
+                    <img src="./images/warped-playlist.jpg" width="100%;">
+					</a>
+                    <figcaption>
+                        <p>Click the photo to be brought to my personal playlist!.</p>
+                    </figcaption>
+                </figure>
+			</article>
+		</div>	
+        <div class="footer">
+            <footer>
+                <p><small><a href="https://www.instagram.com/taitekrogfus/?img_index=1">Instagram</a></small></p>
+            </footer>
+        </div>
+    </div>
+    <!-- End wrapper! -->
+
+    <!--Begin scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+    var s = $("#sticker");
+    var pos = s.position();					   
+    $(window).scroll(function() {
+        var windowpos = $(window).scrollTop();
+        
+        if (windowpos >= pos.top) {
+            s.addClass("stick");
+        } else {
+            s.removeClass("stick");	
+        }
+        });
+        });
+    </script>
+    <!--End Scripts-->
+
+</body>
+</html>

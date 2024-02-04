@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taite's Music Page</title>
+
+    <link rel="stylesheet" href="../styles/styles.css">
+    <style type="text/css">
+        header{
+            padding-top: 0.1%;
+            padding-bottom: 0.1%;
+            margin: auto;
+            margin-bottom: 1%;
+            width: 65%;
+        } 
+    
+        header,footer{
+            color: #1f6f78;
+            font-family: Georgia, Times, "Times New Roman", serif;
+            background-color: #3baea0;
+            text-align: center;
+            border-radius: 25px;
+        }
+</style>
+</head>
+<body>
+    <!--Begin Wrapper-->
+    <div id="wrapper">
+        <div>
+            <header><h1>Taite's Music Page</h1></header>
+        </div>
+        <div id="sticker" class="navbar">
+            <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="page_1.html">EDM</a></li>
+                <li><a href="page_2.html">Indie</a></li>
+                <li><a href="page_3.html">R&B</a></li>
+                <li><a href="page_4.html">Hip Hop</a></li>
+            </ul>
+        </div>
+
+        <div id="feature">
+            <h2>Indie</h2>  
+            <h3>My Favorite Song From This Genre At The Moment</h3>
+            <figure class="song-feature" style="text-align: center; width: 60%; margin: 0 auto; padding: 2%;">
+                <a href="https://open.spotify.com/track/6IPwKM3fUUzlElbvKw2sKl"> 
+                    <img src="../images/girl-in-red.jpeg" class="feature-img">
+                </a>
+                <figcaption>We Fell in Love in October – Girl in Red</figcaption>
+            </figure>   
+        </div>
+
+        <div id="main-content">
+            <article class="normal">
+                <h2>What Does Indie Mean?</h2>
+                <p>
+                    Well indie is short for independent. It literally means that the artist curated and distributed the music independently or with a smaller record label. So, with that definition, anyone signed with the big-time labels like; Universal, Warner, Sony, Def Jam, Atlantic, Republic, etc., would not fit the definition of “indie.”  But with many words in the English language, the definition has changed and the parameters for what it means to be indie have loosened over time. 
+                </p>
+            </article>
+            
+            <article class="normal">
+                <h2>Indie As a Genre</h2>
+                <p>
+                    Whenever you hear that someone likes indie, they usually are trying to refer to a particular genre. Sometimes indie can be interchangeable with the term alternative. If you are a Spotify user, you might have seen “pov: indie” on your Spotify warped.  No one really knows what this means and, in my opinion, it’s an ironic, but accurate, testament to the genre.  
+                </p>
+                <blockquote>
+                    "POV: Indie is a genre of music that is characterized by its independent, DIY approach to production and promotion. It is often characterized by its lo-fi sound, experimental instrumentation, and DIY aesthetic. It is often associated with the punk and indie rock scenes and is often seen as a more accessible alternative to mainstream music. It is often seen as a way for independent artists to express themselves without the constraints of the mainstream music industry." 
+                    <a href="https://www.reddit.com/r/spotify/comments/186z42z/how_is_pov_indie_different_from_regular_indie/">Reddit</a>
+                </blockquote>
+            </article>
+
+            <article class="normal">
+                <h2>My Take On Indie</h2>
+                <p>
+                    I feel like indie is such a broad genre that everyone will disagree on who is what and what the genre means. To me, it’s chill music. Whether that be more of a rock influence or a pop influence. Another thing that I think is important to the genre is its freshness. Because of how the genre started, as independent artists not controlled by major labels, it allowed people to create their own sound. As we’ve seen with some major artists, their sound becomes repetitive or they’ve in some way been controlled by their labels. You won’t really find this in the indie genre. I feel like it’s a social standard with the genre as well, it can sometimes become redundant as some people like to brag about how they listen to the most obscure and unknown artist. At the end of the day, listen to what you want, and enjoy it.  
+                </p>
+            </article>
+        </div>
+
+        <div id="sidebar">
+            <article class="normal">
+                <h2>Spotify Playlist: Pollen</h2>
+                <figure class="side-figure">
+                   <a href="https://open.spotify.com/playlist/37i9dQZF1DWWBHeXOYZf74?si=9c4c7c8338de46df">
+                        <img src="../images/pollen.jpg"> 
+                    </a>
+                    <figcaption>
+                        <p>Give this Spotify playlist a listen. It’s listed under the Indie genre and updated frequently. The description for the playlist is “genre-less. Quality first, always.”</p>
+                    </figcaption>
+                </figure>
+            </article>
+
+        </div>
+
+        <div class="footer">
+            <footer>
+                <p><small><a href="https://www.instagram.com/taitekrogfus/?img_index=1">Instagram</a></small></p>
+            </footer>
+        </div>
+    </div>
+    <!-- End wrapper! -->
+
+    <!--Begin scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+    var s = $("#sticker");
+    var pos = s.position();					   
+    $(window).scroll(function() {
+        var windowpos = $(window).scrollTop();
+        
+        if (windowpos >= pos.top) {
+            s.addClass("stick");
+        } else {
+            s.removeClass("stick");	
+        }
+        });
+        });
+    </script>
+    <!--End Scripts-->
+
+</body>
+</html>
